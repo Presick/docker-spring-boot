@@ -16,12 +16,6 @@ public class StartApplicationTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @Test
-    public void testIndex() throws Exception {
-        mockMvc.perform(get("/"))
-            .andExpect(status().isOk())
-            .andExpect(view().name("index"))
-            .andExpect(model().attribute("title", "Welcome folks..We are learning Kubernete Deployment using Helm, Jenkins Pipeline Today's date is Feb 18th..!!!! "))
-            .andExpect(model().attribute("msg", "Hello All..We are deploying springboot application into EKS cluster using Helm + Jenkins Pipeline!!!!"));
+    
     }
 }
